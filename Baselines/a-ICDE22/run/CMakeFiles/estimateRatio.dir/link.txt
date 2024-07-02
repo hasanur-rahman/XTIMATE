@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/estimateRatio.dir/main.cpp.o -o build/estimateRatio  libobtainStationaryPoints.a 

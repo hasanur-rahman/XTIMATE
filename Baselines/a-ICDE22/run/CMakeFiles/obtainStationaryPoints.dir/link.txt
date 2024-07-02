@@ -1,0 +1,2 @@
+/usr/bin/ar qc libobtainStationaryPoints.a CMakeFiles/obtainStationaryPoints.dir/src/obtainStationaryPoints.cpp.o
+/usr/bin/ranlib libobtainStationaryPoints.a

@@ -1,0 +1,1 @@
+./build/install/bin/sz3 -f -i examples/temperature.f32 -z examples/temperature.f32.sz -3 512 512 512 -c examples/sz3.config -M REL 3e-2

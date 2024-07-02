@@ -1,0 +1,127 @@
+
+
+--- Nyx ---
+# Nyx temperature
+# 1342160 * 8 = 10737280
+# 134217728 * 8 = 1073741824
+rm output.nyx_temperature_sample.log;
+./testdouble_compress sz.config temperature.d64.bin.sample 1342160 &> output.nyx_temperature_sample.log;
+rm szCompressionMetrics.nyx_temperature_sample.log gaussInput.txt;
+python extractInformation.py output.nyx_temperature_sample.log szCompressionMetrics.nyx_temperature_sample.log 10737280 134217728;
+cp gaussInput.txt ../../../gauss/;
+cd ../../../gauss/;
+rm output_nyx_temperature_sample.log;
+./gauss_run.sh gaussInput.txt 134217728 &> output_nyx_temperature_sample.log;
+cd ../compression-ratio-estimation/;
+more ../SZ-Tao/build/bin/szCompressionMetrics.nyx_temperature_sample.log;
+more ../gauss/output_nyx_temperature_sample.log;
+
+cd ../SZ-Tao/build/bin/;
+vi sz.config
+
+
+more ../SZ-Tao/build/bin/szCompressionMetrics.nyx_temperature_sample.log;
+more ../gauss/output_nyx_temperature_sample.log;
+
+
+
+# CESM CLDMED
+# 64800 * 8 = 518400
+# 6480000 * 8 = 51840000
+rm output.cesm_cldmed_sample.log;
+./testdouble_compress sz.config CLDMED_1_1800_3600.d64.dat.sample 64800 &> output.cesm_cldmed_sample.log;
+rm szCompressionMetrics.cesm_cldmed_sample.log gaussInput.txt;
+python extractInformation.py output.cesm_cldmed_sample.log szCompressionMetrics.cesm_cldmed_sample.log 518400 6480000;
+cp gaussInput.txt ../../../gauss/;
+cd ../../../gauss/;
+rm output_cesm_cldmed_sample.log;
+./gauss_run.sh gaussInput.txt 6480000 &> output_cesm_cldmed_sample.log;
+cd ../compression-ratio-estimation/;
+more ../SZ-Tao/build/bin/szCompressionMetrics.cesm_cldmed_sample.log;
+more ../gauss/output_cesm_cldmed_sample.log;
+
+cd ../SZ-Tao/build/bin/;
+vi sz.config
+
+
+more ../SZ-Tao/build/bin/szCompressionMetrics.cesm_cldmed_sample.log;
+more ../gauss/output_cesm_cldmed_sample.log;
+
+
+28692
+# Exaalt yy
+# 28680 * 8 = 229440
+# 2869440 * 8 = 22955520
+rm output.exaalt_zz_sample.log;
+./testdouble_compress sz.config zz.d64.dat.sample 28680 &> output.exaalt_zz_sample.log;
+rm szCompressionMetrics.exaalt_zz_sample.log gaussInput.txt;
+python extractInformation.py output.exaalt_zz_sample.log szCompressionMetrics.exaalt_zz_sample.log 229440 2869440;
+cp gaussInput.txt ../../../gauss/;
+cd ../../../gauss/;
+rm output_exaalt_zz_sample.log;
+./gauss_run.sh gaussInput.txt 2869440 &> output_exaalt_zz_sample.log;
+cd ../compression-ratio-estimation/;
+more ../SZ-Tao/build/bin/szCompressionMetrics.exaalt_zz_sample.log;
+more ../gauss/output_exaalt_zz_sample.log;
+
+cd ../SZ-Tao/build/bin/ ;
+vi sz.config
+
+#####
+
+more ../SZ-Tao/build/bin/szCompressionMetrics.exaalt_vy_sample.log 
+[Sample] PointCnt: 28680
+[Sample] QuantIntv: 65536
+[Sample] NodeCnt: 525
+[Sample] HitRatio: 0.018305
+[Sample] TreeSize: 9442
+[Sample] EncodeSize: 7666
+[Sample] OutlierCnt: 28155
+[Sample] OutlierSize: 84465
+[Sample] TotalSize: 128467
+[Sample] Compression Ratio: 1.785983949185394
+[Full] OutlierCnt: 2816914
+
+more ../gauss/output_exaalt_vy_sample.log 
+data len 28680
+525
+525
+singular rate 0.018235704323570433
+singular rate prediction node # 52326.25941422594
+geometric progression
+r1, r2 0.018235704323570433 3.486750348675035e-05
+est 29205.0
+center, std fit 597.1573919107392 5083.417055892613
+mu, std 597.1573919107392 5083.417055892613
+600.4657308546919 5083.114790844346
+NodeCnt 35052
+
+python estimateCR.py 28155 84465 2816914 525 35052 9442 7666 22955520
+#####
+
+
+more ../SZ-Tao/build/bin/szCompressionMetrics.exaalt_zz_sample.log;
+more ../gauss/output_exaalt_zz_sample.log;
+
+
+# Hurricane V
+# 250000 * 8 = 2000000
+# 25000000 * 8 = 200000000
+rm output_hurricane_v_sample.log;
+./testdouble_compress sz.config Vf48.d64.bin.sample 250000 &> output.hurricane_v_sample.log;
+rm szCompressionMetrics.hurricane_v_sample.log gaussInput.txt;
+python extractInformation.py output.hurricane_v_sample.log szCompressionMetrics.hurricane_v_sample.log 2000000 25000000;
+cp gaussInput.txt ../../../gauss/;
+cd ../../../gauss/;
+rm output_hurricane_v_sample.log;
+./gauss_run.sh gaussInput.txt 25000000 &> output_hurricane_v_sample.log;
+cd ../compression-ratio-estimation/;
+ls
+
+cd ../SZ-Tao/build/bin/
+
+
+more ../SZ-Tao/build/bin/szCompressionMetrics.hurricane_v_sample.log;
+more ../gauss/output_hurricane_v_sample.log;
+
+

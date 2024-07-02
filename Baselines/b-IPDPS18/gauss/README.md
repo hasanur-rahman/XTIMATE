@@ -1,0 +1,2 @@
+ That paper's section IV is about prediction of compression ratio, which is mainly based on some formulas. I didn't implement the algorithm completely. Some parameters were printed by adding tags in SZ's C codes. Another critical point is using Gauss model. The attached zip package is that Gauss model, which is mainly used to compute NodeCnt's parameter values for Table 3. These parameter values are the core of the whole model.
+The input of the attached zip code is the table3's sample 1 and estimate 1.

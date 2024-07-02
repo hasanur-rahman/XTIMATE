@@ -1,0 +1,2 @@
+./testdouble_compress sz.config yf17_pres_sample.dat 960
+python extractInformation.py output.log szCompressionMetrics.log 7680 97104

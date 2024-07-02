@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpredictRatio.a CMakeFiles/predictRatio.dir/src/predictRatio.cpp.o
+/usr/bin/ranlib libpredictRatio.a

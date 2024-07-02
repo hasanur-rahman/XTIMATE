@@ -1,0 +1,11 @@
+[Sample] PointCnt: 960
+[Sample] QuantIntv: 20000
+[Sample] NodeCnt: 432
+[Sample] HitRatio: 0.997917
+[Sample] TreeSize: 7768
+[Sample] EncodeSize: 881
+[Sample] OutlierCnt: 2
+[Sample] OutlierSize: 6
+[Sample] TotalSize: 7688
+[Sample] Compression Ratio: 0.9989594172736732
+[Full] OutlierCnt: 202

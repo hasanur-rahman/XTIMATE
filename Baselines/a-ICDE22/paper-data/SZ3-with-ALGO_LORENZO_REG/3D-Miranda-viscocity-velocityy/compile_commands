@@ -1,0 +1,1 @@
+g++ -std=c++11 -o measure_compression_ratio measure_compression_ratio.cpp
