@@ -2,7 +2,7 @@ A Generic and Efficient Framework for Estimating Lossy Compressibility of Scient
 =====
 
 * Published in 38th International Conference on Massive Storage Systems and Technology (MSST), 2024. 
-* Authors: [Md Hasanur Rahman](https://hasanur-rahman.github.io), Sheng Di, Guanpeng Li and Franck Cappello. 
+* Authors: Md Hasanur Rahman, Sheng Di, Guanpeng Li and Franck Cappello. 
 * This project was done with the collaboration of Argonne National Laboratory.
 
 ## Research Goal
